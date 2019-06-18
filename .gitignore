@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+dist/
+docs/
+target/
+npm-debug.log
+yarn-error.log
+package-lock.json
+.gitattributes
+.idea
+.vscode
+TEST_IGNORE*.html
+src/views/test/
+er
