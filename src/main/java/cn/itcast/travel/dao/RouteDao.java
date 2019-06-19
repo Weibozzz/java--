@@ -1,6 +1,8 @@
 package cn.itcast.travel.dao;
 
 import cn.itcast.travel.domain.Route;
+import cn.itcast.travel.domain.RouteImg;
+import cn.itcast.travel.domain.Seller;
 
 import java.util.List;
 
@@ -22,4 +24,12 @@ public interface RouteDao {
      * @return
      */
     public List<Route> findByPage(int cid, int start,int pageSize,String rname);
+
+    Route findOne(int rid);
+
+    List<RouteImg> findByRid(int rid);
+
+    Seller findById(int sid);
+
+    int findCountByRid(int rid);
 }

@@ -18,12 +18,12 @@ import java.io.IOException;
 public class CategoryServlet extends BaseServlet {
     public void findAll(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         CategoryService service = new CategoryServiceImpl();
-        ResultInfo info = new ResultInfo();
-        info.setFlag(true);
-        info.setData(service.findAll());
+//        ResultInfo info = new ResultInfo();
+//        info.setFlag(true);
+//        info.setData(service.findAll());
 //        ObjectMapper mapper = new ObjectMapper();
 //        response.setContentType("application/json;charset=utf-8");
 //        mapper.writeValue(response.getOutputStream(), info);
-        writeValue(info,response);
+        writeValue(service.findAll(),response);
     }
 }
